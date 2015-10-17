@@ -1,0 +1,40 @@
+Point A = new Point();
+Point B = new Point();
+Point C = new Point();
+
+println("This programme accepts three co-ordinates and tells you which two are closest. Let's start!");
+print("Co-ordinate 1, enter x: ");
+A.x = readDouble();
+print("Co-ordinate 1, enter y: ");
+A.y = readDouble();
+print("Co-ordinate 2, enter x: ");
+B.x = readDouble();
+print("Co-ordinate 2, enter y: ");
+B.y = readDouble();
+print("Co-ordinate 3, enter x: ");
+C.x = readDouble();
+print("Co-ordinate 3, enter y: ");
+C.y = readDouble();
+
+double AB = Math.pow((A.x-B.x), 2)+Math.pow((A.y-B.y), 2);
+double BC = Math.pow((B.x-C.x), 2)+Math.pow((B.y-C.y), 2);
+double AC = Math.pow((A.x-C.x), 2)+Math.pow((A.y-C.y), 2);
+
+if (AB<BC){
+	if (AB<AC){
+		println("Co-ordinates 1 and 2 are closest!");
+	}
+	else {
+		println("Co-ordinates 1 and 3 are closest!");
+	}
+}
+else if (BC<AC){
+	println("Co-ordinates 2 and 3 are closest!");
+}
+else {
+	println("Co-ordinates 1 and 3 are closest");
+}
+class Point{
+	double x;
+	double y;
+}
