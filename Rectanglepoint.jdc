@@ -1,0 +1,31 @@
+Point downRight = new Point();
+Point upLeft = new Point();
+Point extra = new Point();
+
+println("Give the points of a rectangle and then a third point and the programme will tell you if the third point is inside the rectangle");
+
+print("Please enter the x of top left point: ");
+upLeft.x = readDouble();
+print("Please enter the y of top left point: ");
+upLeft.y = readDouble();
+print("Please enter the x of bottom right point: ");
+downRight.x = readDouble();
+print("Please enter the y of bottom right point: ");
+downRight.y = readDouble();
+print("Please enter the x of the extra point: ");
+extra.x = readDouble();
+print("Please enter the y of the extra point: ");
+extra.y = readDouble();
+
+if (extra.x >= upLeft.x && extra.x <= downRight.x && extra.y >= downRight.y && extra.y <= upLeft.y){
+	println("Your extra point was inside the rectangle!");
+}
+else {
+	println("Your extra point was outside the rectangle");
+}
+
+
+class Point {
+	double x;
+	double y;
+}

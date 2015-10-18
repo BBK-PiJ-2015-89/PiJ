@@ -1,0 +1,58 @@
+Point sq1downRight = new Point();
+Point sq1upLeft = new Point();
+Point sq2downRight = new Point();
+Point sq2upLeft = new Point();
+Point extra = new Point();
+boolean inside1 = false;
+boolean inside2 = false;
+
+println("Give the points of a rectangle and then a third point and the programme will tell you if the third point is inside the rectangle");
+
+print("Please enter the x of sq 1 top left point: ");
+sq1upLeft.x = readDouble();
+print("Please enter the y of sq 1 top left point: ");
+sq1upLeft.y = readDouble();
+print("Please enter the x of sq 1 bottom right point: ");
+sq1downRight.x = readDouble();
+print("Please enter the y of sq 1 bottom right point: ");
+sq1downRight.y = readDouble();
+print("Please enter the x of sq 2 top left point: ");
+sq2upLeft.x = readDouble();
+print("Please enter the y of sq 2 top left point: ");
+sq2upLeft.y = readDouble();
+print("Please enter the x of sq 2 bottom right point: ");
+sq2downRight.x = readDouble();
+print("Please enter the y of sq 2 bottom right point: ");
+sq2downRight.y = readDouble();
+
+print("Please enter the x of the extra point: ");
+extra.x = readDouble();
+print("Please enter the y of the extra point: ");
+extra.y = readDouble();
+
+if (extra.x >= sq1upLeft.x && extra.x <= sq1downRight.x && extra.y >= sq1downRight.y && extra.y <= sq1upLeft.y){
+	inside1 = true;
+}
+if (extra.x >= sq2upLeft.x && extra.x <= sq2downRight.x && extra.y >= sq2downRight.y && extra.y <= sq2upLeft.y){
+	inside2 = true;
+}
+
+if (inside1 && inside2){
+	println("Your point was inside both rectangles");
+}
+else if (inside1){
+	println ("Your point was inside the first rectangle");
+}
+else if (inside2){
+	println("Your point was inside the second recetangle");
+}
+else {
+	println("I'm afraid your point was in neither rectangle!");
+}
+
+println(inside1);
+println(inside2);
+class Point {
+	double x;
+	double y;
+}
