@@ -3,34 +3,22 @@ Rectangle myRectangle = new Rectangle();
 println("This programme will work out the perimeter and area of a rectangle using two co-ordinates you enter. Let's go!");
 
 print("Please enter the x of co-ordinate 1");
-myRectangle.Point.upLeft.x = readDouble();
+myRectangle.upLeft.x = readDouble();
 print("Please enter the y of co-ordinate 1");
-myRectangle.Point.upLeft.y = readDouble();
+myRectangle.upLeft.y = readDouble();
 print("Please enter the x of co-ordinate 2");
-myRectangle.Point.downRight.x = readDouble();
+myRectangle.downRight.x = readDouble();
 print("Please enter the y of co-ordinate 2");
-myRectangle.Point.downRight.y = readDouble();
+myRectangle.downRight.y = readDouble();
 
-//* work out length of two sides*//
-
-double bottomside = myRectangle.Point.downRight.x-myRectangle.Point.upLeft.x;
-double side = myRectangle.Point.upLeft.y-myRectangle.Point.downRight.y;
-
-//* To work out perimeter*//
-
+double bottomside = myRectangle.downRight.x-myRectangle.upLeft.x;
+double side = myRectangle.upLeft.y-myRectangle.downRight.y;
 double perimeter = (bottomside+side)*2;
-
-//*To work out area*//
-
 double area = bottomside*side;
-
-//*print results*//
-
 println("The area of the rectangle is " + area);
 println("The perimeter of the rectangle is " + perimeter);
 
-
-class Point{
+class Point {
 	double x;
 	double y;
 }
