@@ -4,7 +4,7 @@ String str = input.nextLine();
 int length = str.length();
 
 
-for (count=0; count<=length; count++){
+for (int count=0; count<=length; count++){
 	println(str.charAt(count));
 }
 
