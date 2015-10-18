@@ -64,6 +64,6 @@ if (fivepence>0){
 if (twopence>0){
 	println(twopence + " x £0.02 coins");
 }
-if (one>0){
-	println(one + " x £0.01 coins");
+if (onepence>0){
+	println(onepence + " x £0.01 coins");
 }
