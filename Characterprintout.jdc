@@ -1,15 +1,8 @@
 println("Enter a sentance/word:");
 String str = input.nextLine();
-
 int length = str.length();
 
 
 for (int count=0; count<length; count++){
 	println(str.charAt(count));
-}
-
-
-
-
-
-
+	}
