@@ -1,5 +1,5 @@
-println("You are buying a computer, it's expensive!");
-println("Enter the price of your computer in pennies!");
+println("Welcome to the shop");
+println("Please enter the price of the product, in pennies");
 int product = readInt();
 println("Enter the amount of cash paid for this, and I'll work out your change");
 int cash = readInt();
@@ -64,6 +64,6 @@ if (fivepence>0){
 if (twopence>0){
 	println(twopence + " x £0.02 coins");
 }
-if (onepence>0){
-	println(onepence + " x £0.01 coins");
+if (one>0){
+	println(one + " x £0.01 coins");
 }
