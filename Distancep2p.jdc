@@ -1,13 +1,8 @@
-class Point {
-	double x;
-	double y;
-
-}
 Point A = new Point();
 Point B = new Point();
 Point C = new Point();
-println("This programme accepts three co-ordinates and tells you which two are closest. Let's start!")
 
+println("This programme accepts three co-ordinates and tells you which two are closest. Let's start!");
 print("Co-ordinate 1, enter x: ");
 A.x = readDouble();
 print("Co-ordinate 1, enter y: ");
@@ -21,19 +16,25 @@ C.x = readDouble();
 print("Co-ordinate 3, enter y: ");
 C.y = readDouble();
 
-Double AB = Math.pow((A.x-B.x), 2)+Math.pow((A.y-B.y), 2)
-Double BC = Math.pow((B.x-C.x), 2)+Math.pow((B.y-C.y), 2)
-Double AC = Math.pow((A.x-C.x), 2)+Math.pow((A.y-C.y), 2)
+double AB = Math.pow((A.x-B.x), 2)+Math.pow((A.y-B.y), 2);
+double BC = Math.pow((B.x-C.x), 2)+Math.pow((B.y-C.y), 2);
+double AC = Math.pow((A.x-C.x), 2)+Math.pow((A.y-C.y), 2);
 
 if (AB<BC){
 	if (AB<AC){
-		println("Co-ordinates A and B are closest!");
-	}
-	//*We know BC is smaller than AB, so now we check if BC is smaller than AC, if it is then BC are the closest!*//
-	else if (BC<AC){
-		println("Co-ordinates B and C are closest");
+		println("Co-ordinates 1 and 2 are closest!");
 	}
 	else {
-		println("Co-ordinates A and C are the closest");
+		println("Co-ordinates 1 and 3 are closest!");
 	}
+}
+else if (BC<AC){
+	println("Co-ordinates 2 and 3 are closest!");
+}
+else {
+	println("Co-ordinates 1 and 3 are closest");
+}
+class Point{
+	double x;
+	double y;
 }
