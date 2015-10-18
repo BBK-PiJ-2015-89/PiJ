@@ -1,0 +1,15 @@
+println("Enter a sentance/word:");
+String str = input.nextLine();
+println("Enter the letter you'd like me to count in the text you entered above");
+String findstr = input.nextLine();
+char findchar = findstr.charAt(0);
+int length = str.length();
+int numberofchar = 0;
+
+
+for (int count=0; count<length; count++){
+	if(str.charAt(count)==findchar){
+		numberofchar++;
+	}
+}
+println("The total number of " + findchar + " was " + numberofchar);

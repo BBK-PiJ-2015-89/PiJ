@@ -1,0 +1,11 @@
+println("Enter a sentance/word:");
+String str = input.nextLine();
+int length = str.length();
+int numberofchar = 0;
+
+for (int count=0; count<length; count++){
+	if(str.charAt(count)=='e'){
+		numberofchar++;
+	}
+}
+println("The total number of e's was " + numberofchar);
