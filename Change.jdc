@@ -1,0 +1,69 @@
+println("You are buying a computer, it's expensive!");
+println("Enter the price of your computer in pennies!");
+int product = readInt();
+println("Enter the amount of cash paid for this, and I'll work out your change");
+int cash = readInt();
+
+int changeint = cash-product;
+
+int fifties = changeint / 5000;
+changeint = changeint % 5000;
+int twenties = changeint / 2000;
+changeint = changeint % 2000;
+int tens = changeint / 1000;
+changeint = changeint % 1000;
+int fives = changeint / 500;
+changeint = changeint % 500;
+int twos = changeint / 200;
+changeint = changeint % 200;
+int ones = changeint / 100;
+changeint = changeint % 100;
+int fiftypence = changeint / 50;
+changeint = changeint % 50;
+int twentypence = changeint / 20;
+changeint = changeint % 20;
+int tenpence = changeint / 10;
+changeint = changeint % 10;
+int fivepence = changeint / 5;
+changeint = changeint % 5;
+int twopence = changeint / 2;
+changeint = changeint % 2;
+int onepence = changeint / 1;
+changeint = changeint % 1;
+
+if (fifties>0){
+	println(fifties + " x £50 notes");
+}
+if (twenties>0){
+	println(twenties + " x £20 notes");
+}
+if (tens>0){
+	println(tens + " x £10 notes");
+}
+if (fives>0){
+	println(fives + " x £5 notes");
+}
+if (twos>0){
+	println(twos + " x £2 coins");
+}
+if (ones>0){
+	println(ones + " x £1 coins");
+}
+if (fiftypence>0){
+	println(fiftypence + " x £0.50 coins");
+}
+if (twentypence>0){
+	println(twentypence + " x £0.20 coins");
+}
+if (tenpence>0){
+	println(tenpence + " x £0.10 coins");
+}
+if (fivepence>0){
+	println(fivepence + " x £0.05 coins");
+}
+if (twopence>0){
+	println(twopence + " x £0.02 coins");
+}
+if (onepence>0){
+	println(onepence + " x £0.01 coins");
+}
