@@ -1,4 +1,6 @@
 Rectangle myRectangle = new Rectangle();
+Point upLeft = new Point();
+Point downRight = new Point();
 
 println("This programme will work out the perimeter and area of a rectangle using two co-ordinates you enter. Let's go!");
 
