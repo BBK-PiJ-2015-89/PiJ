@@ -1,16 +1,18 @@
-Rectangle myRectangle = new Rectangle();
-Point upLeft = new Point();
 Point downRight = new Point();
+Point upLeft = new Point();
+Corners myRectangle = new Corners();
+myRectangle.upLeft=upLeft;
+myRectangle.downRight=downRight;
 
 println("This programme will work out the perimeter and area of a rectangle using two co-ordinates you enter. Let's go!");
 
-print("Please enter the x of co-ordinate 1");
+print("Please enter the x of top left point: ");
 myRectangle.upLeft.x = readDouble();
-print("Please enter the y of co-ordinate 1");
+print("Please enter the y of top left point: ");
 myRectangle.upLeft.y = readDouble();
-print("Please enter the x of co-ordinate 2");
+print("Please enter the x of bottom right point: ");
 myRectangle.downRight.x = readDouble();
-print("Please enter the y of co-ordinate 2");
+print("Please enter the y of bottom right point: ");
 myRectangle.downRight.y = readDouble();
 
 double bottomside = myRectangle.downRight.x-myRectangle.upLeft.x;
@@ -24,7 +26,7 @@ class Point {
 	double x;
 	double y;
 }
-class Rectangle {
+class Corners {
 	Point upLeft;
 	Point downRight;
 }
