@@ -1,0 +1,15 @@
+println("enter the base number and exponent below:");
+print("enter base number: ");
+int b = readInt();
+print("enter exponent: ");
+int e = readInt();
+int result = power(b,e);
+println("The result is: " + result);
+
+int power(int base, int exponent){
+	int result = 1;
+		for (int i=0; i<exponent; i++){
+			result = result * base;
+		}
+		return result;
+}
