@@ -5,11 +5,23 @@ print("enter exponent: ");
 int e = readInt();
 int result = power(b,e);
 println("The result is: " + result);
+println("Read number from user, which will be used with base as ex.");
+int mynumber = readInt();
+int endRreslt = power2(mynumber);
+println(endRreslt);
 
-int power(int base, int exponent){
+int power2(int pwr2)
+{
+	int calc = power(2, pwr2);
+	return calc;
+}
+
+int power(int base, int exponent)
+{
 	int result = 1;
-		for (int i=0; i<exponent; i++){
-			result = result * base;
-		}
-		return result;
+	for (int i=0; i<exponent; i++)
+	{
+		result = result * base;
+	}
+	return result;
 }
