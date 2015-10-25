@@ -14,6 +14,10 @@ input.nextLine();
 String stri = input.nextLine();
 int binaryresult = binary2decimal(stri);
 println("Value of binary number is: " + binaryresult);
+println("Enter a decimal number to be converted to a binary");
+int number = readInt();
+String converted = decimal2binary(number);
+println("Your Binary number is " + converted);
 
 int power2(int pwr2)
 {
@@ -48,4 +52,23 @@ int binary2decimal(String str)
 		}		
 	}
 return binary; 
+}
+
+String decimal2binary(int num)
+{
+	
+	String converted = "";
+	while(num>0)
+	{
+		converted += (num % 2 != 0) ? "1" : "0";
+		num = num/2;
+	}
+	int len = converted.length();
+	String reverse = "";
+	for(int i = len -1; i>=0; i--)
+	{
+		reverse += converted.charAt(i);
+	}
+
+	return reverse;
 }
