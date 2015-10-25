@@ -35,12 +35,12 @@ int binary2decimal(String str)
 {
 	int binary = 0;
 	int length = str.length();
-	for (int count = 0; count<=length; count++)
+	for (int count = 0; count<length; count++)
 	{
-		String current = str.substring(count, count);
-		if (current == "1")
+		String current = str.substring(count,count);
+		if (str.charAt(count) == '1')
 		{
-			int power = length-count;
+			int power = length-count-1;
 
 			int digitresult = power2(power);
 
