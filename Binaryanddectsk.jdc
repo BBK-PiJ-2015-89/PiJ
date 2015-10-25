@@ -10,11 +10,9 @@ int mynumber = readInt();
 int endRreslt = power2(mynumber);
 println(endRreslt);
 println("Enter a binary number:");
-String str = readString();
-int endResult = binary2decimal(str);
-println("Value of binary number is: " + endResult);
-
-
+String str = readLine();
+int binaryresult = binary2decimal(str);
+println("Value of binary number is: " + binary);
 
 int power2(int pwr2)
 {
@@ -32,7 +30,7 @@ int power(int base, int exponent)
 	return result;
 }
 
-binary2decimal(String str)
+int binary2decimal(String str)
 {
 	int length = str.length();
 	for (int count = 0; count<=length; count++)
@@ -41,11 +39,11 @@ binary2decimal(String str)
 		if (current == "1")
 		{
 			int power = length-count;
-			int digitresult = power2(power);
-			int endResult = endResult+digitresult;
-		]
-	}
 
-}
-return endResult
+			int digitresult = power2(power);
+
+			int binary = binary+digitresult;
+		}	
+	}
+return binary;
 }
