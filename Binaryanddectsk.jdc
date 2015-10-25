@@ -9,6 +9,12 @@ println("Read number from user, which will be used with base as ex.");
 int mynumber = readInt();
 int endRreslt = power2(mynumber);
 println(endRreslt);
+println("Enter a binary number:");
+String str = readString();
+int endResult = binary2decimal(str);
+println("Value of binary number is: " + endResult);
+
+
 
 int power2(int pwr2)
 {
@@ -24,4 +30,22 @@ int power(int base, int exponent)
 		result = result * base;
 	}
 	return result;
+}
+
+binary2decimal(String str)
+{
+	int length = str.length();
+	for (int count = 0; count<=length; count++)
+	{
+		String current = str.substring(count, count);
+		if (current == "1")
+		{
+			int power = length-count;
+			int digitresult = power2(power);
+			int endResult = endResult+digitresult;
+		]
+	}
+
+}
+return endResult
 }
