@@ -10,7 +10,7 @@ int mynumber = readInt();
 int endRreslt = power2(mynumber);
 println(endRreslt);
 println("Enter a binary number:");
-String stri = readLine();
+String stri = input.nextLine();
 int binaryresult = binary2decimal(stri);
 println("Value of binary number is: " + binaryresult);
 
