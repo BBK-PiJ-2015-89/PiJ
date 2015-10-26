@@ -1,0 +1,43 @@
+Point pointOne = new Point();
+Point pointTwo = new Point();
+
+println("Enter x for point 1");
+pointOne.x = readDouble();
+println("Enter y for point 1");
+pointOne.y = readDouble();
+println("Enter x for point 2");
+pointTwo.x = readDouble();
+println("Enter y for point 2");
+pointTwo.y = readDouble();
+
+double result = pointOne.distanceTo(pointTwo);
+println("The distance is: " + result);
+
+
+
+
+
+
+
+
+
+
+class Point {
+	double x;
+	double y;
+	
+		double distanceTo(Point pointTwo)
+		{
+			double xCalc = Math.pow(x-pointTwo.x,2);
+			double yCalc = Math.pow(y-pointTwo.y,2);
+			double sqrtDifference = Math.sqrt(xCalc+yCalc);
+			return sqrtDifference;
+		}
+		
+		double distanceToOrigin()
+		{
+			double result = distanceTo(0);
+			return result;
+		}
+		
+}
