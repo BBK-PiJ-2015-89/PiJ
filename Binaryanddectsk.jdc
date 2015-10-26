@@ -1,23 +1,22 @@
-println("enter the base number and exponent below:");
-print("enter base number: ");
-int b = readInt();
-print("enter exponent: ");
-int e = readInt();
-int result = power(b,e);
-println("The result is: " + result);
-println("Read number from user, which will be used as a power of 2");
-int mynumber = readInt();
-int endRreslt = power2(mynumber);
-println(endRreslt);
-println("Enter a binary number:");
-input.nextLine();
-String stri = input.nextLine();
-int binaryresult = binary2decimal(stri);
-println("Value of binary number is: " + binaryresult);
-println("Enter a decimal number to be converted to a binary");
-int number = readInt();
-String converted = decimal2binary(number);
-println("Your Binary number is " + converted);
+println("Please choose an option");
+println("Key 1 for converting decimal to binary");
+println("Key 2 for converting binary to decimal");
+int num = readInt();
+switch(num){
+case 1:
+	println("Enter a decimal number to be converted to a binary");
+	int number = readInt();
+	String converted = decimal2binary(number);
+	println("Your Binary number is " + converted);
+	break;
+case 2:
+	println("Enter a binary number:");
+	input.nextLine();
+	String stri = input.nextLine();
+	int binaryresult = binary2decimal(stri);
+	println("Value of binary number is: " + binaryresult);
+	break;
+}
 
 int power2(int pwr2)
 {
