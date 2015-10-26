@@ -13,6 +13,9 @@ pointTwo.y = readDouble();
 double result = pointOne.distanceTo(pointTwo);
 println("The distance is: " + result);
 
+result = pointOne.distanceToOrigin();
+println("Point 1 distance to origin is: " + result);
+
 
 
 
@@ -36,7 +39,10 @@ class Point {
 		
 		double distanceToOrigin()
 		{
-			double result = distanceTo(0);
+			Point origin = new Point();
+			origin.x=0;
+			origin.y=0;
+			double result = distanceTo(origin);
 			return result;
 		}
 		
