@@ -1,5 +1,6 @@
 Point pointOne = new Point();
 Point pointTwo = new Point();
+Point moveTopoint = new Point();
 
 println("Enter x for point 1");
 pointOne.x = readDouble();
@@ -16,11 +17,17 @@ println("The distance is: " + result);
 result = pointOne.distanceToOrigin();
 println("Point 1 distance to origin is: " + result);
 
-pointOne.moveTo();
 println("The moved point is now at: " + pointOne.x + " " + pointOne.y);
 
 
-
+println("Enter X of new location");
+moveTopoint.x = readDouble();
+println("Enter Y of new location");
+moveTopoint.y = readDouble();
+pointOne.moveTo(10.00,12.00);
+println(pointOne.x + " " + pointOne.y);
+pointOne.moveTo(moveTopoint);
+println(pointOne.x + " " + pointOne.y);
 
 
 class Point {
@@ -44,16 +51,16 @@ class Point {
 			return result;
 		}
 		
-		void moveTo()
+		void moveTo(double x, double y)
 		{
-			Point moveTopoint = new Point();
-			println("Enter X of new location");
-			moveTopoint.x = readDouble();
-			println("Enter Y of new location");
-			moveTopoint.y = readDouble();
-			x = moveTopoint.x;
-			y = moveTopoint.y;
-			
+			this.x = x;
+			this.y = y;
+		}
+		
+		void moveTo(Point p)
+		{
+			this.x = p.x;
+			this.y = p.y;
 		}
 		
 }
