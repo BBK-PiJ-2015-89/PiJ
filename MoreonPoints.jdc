@@ -16,10 +16,8 @@ println("The distance is: " + result);
 result = pointOne.distanceToOrigin();
 println("Point 1 distance to origin is: " + result);
 
-
-
-
-
+pointOne.moveTo();
+println("The moved point is now at: " + pointOne.x + " " + pointOne.y);
 
 
 
@@ -44,6 +42,18 @@ class Point {
 			origin.y=0;
 			double result = distanceTo(origin);
 			return result;
+		}
+		
+		void moveTo()
+		{
+			Point moveTopoint = new Point();
+			println("Enter X of new location");
+			moveTopoint.x = readDouble();
+			println("Enter Y of new location");
+			moveTopoint.y = readDouble();
+			x = moveTopoint.x;
+			y = moveTopoint.y;
+			
 		}
 		
 }
