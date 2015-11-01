@@ -1,0 +1,53 @@
+println("This programme will read a number such as 123,345.45 and tell you what halve is");
+println("Please enter the number below:");
+String entered = input.nextLine();
+convert(entered);
+
+void convert(String ent)
+{
+
+	int length = ent.length();
+	String number = "";
+	String decimal = "";
+	double answer = 0;
+	boolean flag = false;
+	for(int i = 0; i<length; i++)
+	{
+		if(!flag)
+		{
+			if(ent.charAt(i)==',')
+			{
+			}
+			else if (ent.charAt(i)=='.')
+			{
+				flag = true;
+			}
+			else 
+			{
+				number += ent.charAt(i);
+			}
+		}
+		else
+		{
+			if(ent.charAt(i)=='.')
+			{
+				println("You cannot use two .'s in a number, quitting because of incorrect input!");
+				break;
+			}
+			else
+			{
+				decimal += ent.charAt(i);
+			}
+		}
+	}
+
+	int numberInt = Integer.parseInt(number);
+	int decimalInt = Integer.parseInt(decimal);
+
+	double finalnumberDouble = numberInt/2;
+	double pwr = Math.pow(10, decimal.length());
+	double finaldecimalDouble = (decimalInt/pwr)/2;
+
+	println(finaldecimalDouble + finalnumberDouble);
+
+}
