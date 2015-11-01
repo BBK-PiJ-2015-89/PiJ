@@ -6,7 +6,13 @@ double interest = readDouble();
 print("Enter the number of years you would like a mortage for: ");
 double years = readDouble();
 
+double totaldue = totaldue(cost, interest);
+double yearlydue = yearlypayment(years, cost, interest);
+double yearstocapital = yearstocapital(years, cost, interest);
 
+println("The total due is £" + totaldue);
+println("The total due each year is £" + yearlydue);
+println("The number of years before you pay off the interest will be approx: " + yearstocapital);
 
 
 double totaldue(double c, double i)
@@ -21,11 +27,12 @@ double yearlypayment(double y, double c, double i)
 }
 int yearstocapital(double y, double c, double i)
 {
-	double cost=totaldue(c, i);
+	double totalcost=totaldue(c, i);
 	double yearlydue = yearlypayment(y, c, i);
+	double interestdue = totalcost-c;
 	int year;
 	double paid = 0.00;
-	for(year=0; paid>=cost; year++)
+	for(year=0; paid<interestdue; year++)
 	{
 		paid += yearlydue;
 	}
