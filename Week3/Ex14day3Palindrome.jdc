@@ -1,5 +1,5 @@
-println("This programme can check if you enter a Palindrome");
-println("Please enter a word or sentance below which you think might be one, we'll tell you if it is or not.");
+println("This programme can create a Palindrome");
+println("Please enter a word or sentance below which we will convert for you:");
 String entered = input.nextLine();
 String converted = reverse(entered);
 println(converted);
