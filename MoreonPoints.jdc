@@ -2,6 +2,7 @@ Point pointOne = new Point();
 Point pointTwo = new Point();
 Point moveTopoint = new Point();
 
+/*Distance to Point Section*/
 println("Enter x for point 1");
 pointOne.x = readDouble();
 println("Enter y for point 1");
@@ -14,21 +15,28 @@ pointTwo.y = readDouble();
 double result = pointOne.distanceTo(pointTwo);
 println("The distance is: " + result);
 
+/*Distance to origin section*/
+
 result = pointOne.distanceToOrigin();
 println("Point 1 distance to origin is: " + result);
 
-println("The moved point is now at: " + pointOne.x + " " + pointOne.y);
-
-
-println("Enter X of new location");
+println("Enter X of new location of point 1");
 moveTopoint.x = readDouble();
-println("Enter Y of new location");
+println("Enter Y of new location of point 1");
 moveTopoint.y = readDouble();
-pointOne.moveTo(10.00,12.00);
-println(pointOne.x + " " + pointOne.y);
-pointOne.moveTo(moveTopoint);
-println(pointOne.x + " " + pointOne.y);
 
+pointOne.moveTo(moveTopoint.x, moveTopoint.y);
+println("The moved (point 1) point is now at: " + pointOne.x + " " + pointOne.y);
+
+println("We will now set point 1 to be as point 2");
+pointOne.moveTo(pointTwo);
+println("Point 1's co-ordinates are now " + pointOne.x + " " + pointOne.y);
+
+Point clonedPoint = pointOne.clone(pointOne);
+println("We have just cloned point 1 to a new point 'Cloned Point' it's co-ordinates are: " + clonedPoint.x + " " + clonedPoint.y);
+
+Point oppositePoint = pointOne.opposite(pointOne);
+println("We will now clone and return opposite values of point 1 in a new point, Opposite Point: " + oppositePoint.x + " " + oppositePoint.y);
 
 class Point {
 	double x;
@@ -62,5 +70,18 @@ class Point {
 			this.x = p.x;
 			this.y = p.y;
 		}
-		
+		Point clone(Point p)
+		{
+			Point newPoint = new Point();
+			newPoint.x = p.x;
+			newPoint.y = p.y;
+			return(newPoint);
+		}
+		Point opposite(Point p)
+		{
+			Point newPoint = new Point();
+			newPoint.x = -p.x;
+			newPoint.y = -p.y;
+			return(newPoint);
+		}
 }
