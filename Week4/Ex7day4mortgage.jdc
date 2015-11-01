@@ -1,0 +1,33 @@
+println("Mortage Calculator");
+print("Enter the cost of the property: ");
+double cost = readDouble();
+print("Enter the interest rate: ");
+double interest = readDouble();
+print("Enter the number of years you would like a mortage for: ");
+double years = readDouble();
+
+
+
+
+double totaldue(double c, double i)
+{
+	double totalcost = c*(1+(i/100));
+	return totalcost;
+}
+double yearlypayment(double y, double c, double i)
+{
+	double yearlydue=totaldue(c, i)/y;
+	return yearlydue;
+}
+int yearstocapital(double y, double c, double i)
+{
+	double cost=totaldue(c, i);
+	double yearlydue = yearlypayment(y, c, i);
+	int year;
+	double paid = 0.00;
+	for(year=0; paid>=cost; year++)
+	{
+		paid += yearlydue;
+	}
+	return year;
+}

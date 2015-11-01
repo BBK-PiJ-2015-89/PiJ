@@ -1,0 +1,64 @@
+Integer2 i2 = new Integer2();
+print("Enter a number: ");
+String str = input.nextLine();
+int i = Integer.parseInt(str); 
+i2.setValue(i);
+print ("The number you entered is ");
+if (i2.isEven()) {
+println ("even.");
+} else if (i2.isOdd()) {
+        println ("odd.");
+    } else {
+println ("undefined!! Your code is buggy!"); }
+int parsedInt = Integer.parseInt(i2.topString()); if (parsedInt == i2.getValue()) {
+println("Your toString() method seems to work fine."); }
+
+class Integer2
+{
+	int value;
+
+	int getValue()
+	{
+		return value;
+	}
+	int setValue(int v)
+	{
+		value = v;
+		return value;
+	}
+	boolean isEven()
+	{
+		boolean isEven;	
+		if(value%2==0)
+		{
+			isEven=true;
+		}
+		else
+		{
+			isEven=false;
+		}
+		return isEven;
+	}
+	boolean isOdd()
+	{
+		boolean isOdd;
+		if (value%2!=0)
+		{
+			isOdd = true;
+		}
+		else
+		{
+			isOdd= false;
+		}
+		return isOdd;
+	}
+	void prettyPrint()
+	{
+		println(value);
+	}
+	String topString()
+	{
+		return Integer.toString(value);
+	}
+}
+
