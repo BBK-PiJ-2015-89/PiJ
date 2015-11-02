@@ -1,0 +1,32 @@
+println("Enter a number to find the nth Fibonacci");
+int num = readInt();
+int result = 0;
+if (num<3)
+{
+	result = 1;
+}
+else
+{
+	for(int i=num; i>0; i--)
+	{
+		result= result + (num-1) + (num-2);
+	}
+}
+println("The result is " + num);
+
+/* 
+fib(num);
+int fib(int n)
+{
+	if (n<3)
+	{
+		return 1;
+	}
+	else
+	{
+		int result = fib(n-1) + fib (n-2); 
+		return result;
+	}
+}
+*/
+

@@ -1,0 +1,23 @@
+println("Please enter a number and the programme will work out the factorial");
+int num = readInt();
+factorial(num);
+int result =1;
+for (int i=2; i<=num; i++)
+{
+	result = result*i;
+}
+println("The factorial of " + num + " is " + result);
+
+int factorial(int n)
+{
+	if (n==1)
+	{
+		return 1;
+	}
+	else 
+	{
+		int result = n * factorial(n-1);
+		return result;
+	}
+}
+
