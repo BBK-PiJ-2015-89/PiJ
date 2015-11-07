@@ -1,0 +1,42 @@
+public class Palindrome
+{
+
+public static void main(String[] args)
+{
+	System.out.println("This programme can check if you enter a Palindrome");
+	System.out.println("Please enter a word or sentance below which you think might be one, we'll tell you if it is or not.");
+	Palindrome p = new Palindrome;
+	String entered = input.nextLine();
+	String converted = p.reverse(entered);
+	String reverse;
+	if(entered.equals(converted))
+	{
+		System.out.println("Your word/sentance was a Palindrome!");
+	}
+	else
+	{
+		System.out.println("Your word/sentance was not a Palindrome!");
+	}
+}
+
+
+
+public String reverse (String ent)
+{
+	int length = ent.length();
+	String reverse = p.rev(ent, length);
+	return reverse;
+}
+
+public String rev (String ent, int length)
+{
+			if (ent.length==0||ent.length==1)
+			{
+				return ent;
+			}
+			else
+			{
+			String reverse += rev(ent, length-1);
+			}
+}
+
