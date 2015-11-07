@@ -14,7 +14,7 @@ else
 }
 println("The result is " + num);
 
-/* 
+/* This is the recursive method way of doing it.
 fib(num);
 int fib(int n)
 {
@@ -24,7 +24,7 @@ int fib(int n)
 	}
 	else
 	{
-		int result = fib(n-1) + fib (n-2); 
+		int result = fib(n-1) + fib(n-2); 
 		return result;
 	}
 }
