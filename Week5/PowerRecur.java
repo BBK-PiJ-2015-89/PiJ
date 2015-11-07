@@ -1,10 +1,10 @@
-public class PowerRucur
+public class PowerRecur
 {
 
 	public static void main(String[] args)
 	{
 		System.out.println("2 to the power of 16");
-		PowerRucur p = new PowerRucur();
+		PowerRecur p = new PowerRecur();
 		int result = p.pow(2,8);
 
 		System.out.println(result);
