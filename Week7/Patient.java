@@ -8,7 +8,6 @@ public class Patient
 	public static void main(String[] args)
 	{
 		Patient patient1 = new Patient("Graeme", 12, "Rabies");
-		System.out.println(patient1.name + ", " + patient1.age + ", " + patient1.illness);
 		patient1.addPatient(new Patient("Dan", 22, "Flu"));
 		patient1.addPatient(new Patient("Phil", 21, "Broken leg"));
 		patient1.addPatient(new Patient("Mark", 17, "Tummy bug"));
@@ -63,7 +62,7 @@ public class Patient
 		else if(this.nextPatient != null)
 		{
 			System.out.println(patient.name + ", " + patient.age + ", " + patient.illness);
-			printList(patient.nextPatient);
+			patient.nextPatient.printList(patient.nextPatient);
 		}
 
 	}
