@@ -21,45 +21,54 @@ public class Matrix
 	
 	public void setRow(int f, String s)
 	{
-		int j=0;
-		for (int i=0; i<m[0].length; i++)//this is moving across the row
+		boolean valid = validityCheck(2,f,s);
+		if (valid)
 		{
-			if (j<s.length())
+			int j=0;
+			String temp;
+			for (int i=0; i<m[0].length; i++)//this is moving across the row
 			{
-				if(s.charAt(j)==',')
+				temp = "";
+				if (j<s.length())
 				{
+					while(j<s.length() && s.charAt(j)!=',' )
+					{
+						temp += s.charAt(j);
+						j++;
+					}
 					j++;
-					m[f][i] = (int)s.charAt(j);
-					System.out.println("char at: " + j +"= " + s.charAt(j));
-					System.out.println((int)s.charAt(j));
+					m[f][i]= Integer.parseInt(temp);
+					
 				}
-				else
-				{
-					m[f][i] = (int)s.charAt(j);
-					System.out.println("char at: " + j +"= " + s.charAt(j));
-					System.out.println((int)s.charAt(j));
-				}
-				j++;
 			}
 		}
 	}
 
 	public void setColumn(int h, String k)
 	{
-		
-		for (int i=0; i<m.length; i++)//this is moving down the column
+		boolean valid = validityCheck(1,h,k);
+		if (valid)
 		{
 			int j=0;
-			if (j<k.length())
+			String temp;
+			for (int i=0; i<m.length; i++)//this is moving down the column
 			{
-				if(k.charAt(j)==','){}
-					else
+				temp = "";
+				if (j<k.length())
+				{
+					while(j<k.length() && k.charAt(j)!=',' )
 					{
-						m[i][h]= k.charAt(j);
-						
+						temp += k.charAt(j);
+						j++;
 					}
-				j++;
+					j++;
+					m[i][h]= Integer.parseInt(temp);
+					
+				}
 			}
+		}
+		else {
+			System.out.println("Error Test");
 		}
 	}
 
@@ -97,11 +106,42 @@ public class Matrix
 	{
 		for (int i=0; i<m.length; i++)
 		{
-			System.out.println('\t');
+			
 			for (int j=0; j<m[0].length; j++)
 			{
-				System.out.println(m[i][j]);
+				System.out.print(m[i][j]+",");
 			}
+			System.out.println('\t');
+			
+		}
+	}
+
+	public boolean validityCheck(int checkid, int num, String s)
+	{
+		int length1 = m.length;
+		int length2 = m[0].length;
+		int count = 1;
+		boolean valid = true;
+
+			for (int i = 0; i<s.length(); i++)
+			{
+				if (s.charAt(i)==',')
+				{
+					count++;
+				}
+			}
+
+		if (checkid==1 && count==length1)
+		{
+			return valid;
+		}
+		else if (checkid==2 && count==length2)
+		{
+			return valid;
+		}
+		else
+		{
+			return valid=false;
 		}
 	}
 }
