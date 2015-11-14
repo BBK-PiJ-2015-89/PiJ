@@ -11,8 +11,11 @@ public class Patient
 		patient1.addPatient(new Patient("Dan", 22, "Flu"));
 		patient1.addPatient(new Patient("Phil", 21, "Broken leg"));
 		patient1.addPatient(new Patient("Mark", 17, "Tummy bug"));
-
-		patient1.printList(patient1);
+		Patient patient2 = new Patient("Jake", 32, "large case of boils");
+		patient1.addPatient(patient2);
+		patient1.printPatient();
+		patient1.deletePatient(name);
+		patient1.printPatient();
 
 	}
 
@@ -36,13 +39,13 @@ public class Patient
 		}
 	}
 
-	public boolean deletePatient(Patient patient)
+	public boolean deletePatient(String name)
 	{
 		if(this.nextPatient == null)
 		{
 			return false;
 		}
-		else if(this.nextPatient.name.equals(patient.name))
+		else if(this.nextPatient.name.equals(name))
 		{
 			this.nextPatient = nextPatient.nextPatient;
 			return true;
@@ -53,16 +56,15 @@ public class Patient
 		}
 	}
 
-	public void printList(Patient patient)
+	public void printPatient()
 	{
-		if(this.nextPatient == null)
+	
+		
+			System.out.println(this.name + ", " + this.age + ", " + this.illness);
+		
+		if(this.nextPatient != null)
 		{
-			System.out.println(patient.name + ", " + patient.age + ", " + patient.illness);
-		}
-		else if(this.nextPatient != null)
-		{
-			System.out.println(patient.name + ", " + patient.age + ", " + patient.illness);
-			patient.nextPatient.printList(patient.nextPatient);
+			this.nextPatient.printPatient();
 		}
 
 	}
