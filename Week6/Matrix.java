@@ -144,4 +144,33 @@ public class Matrix
 			return valid=false;
 		}
 	}
+
+	public void isTriangular()
+	{
+		Matrixchecker d = new Matrixchecker();
+		boolean result = d.isTriangular(m);
+		if (result)
+		{
+			System.out.println("The matrix is triangular");
+		}
+		else
+		{
+			System.out.println("The matrix is not triangular");
+		}
+	}
+
+		public void isSymmetrical()
+	{
+		Matrixchecker d = new Matrixchecker();
+		boolean result = d.isSymmetrical(m);
+		if (result)
+		{
+			System.out.println("The matrix is symmetrical");
+		}
+		else
+		{
+			System.out.println("The matrix is not symmetrical");
+		}
+	}
+	
 }
