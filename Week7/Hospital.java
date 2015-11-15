@@ -17,7 +17,7 @@ public static void main(String[] args)
 		//Patient patient2 = new Patient("Jake", 32, "large case of boils");
 		//patient1.addPatient(patient2);
 		patient1.printPatient();
-		patient1.deletePatient("Harry");
+		patient1.deletePatient("Simon");
 		patient1.printPatient();
 	}
 }
