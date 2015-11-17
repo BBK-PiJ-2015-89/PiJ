@@ -13,46 +13,21 @@ public class Patient
 		this.nextPatient = null;
 	}	
 
-	public void addPatient(Patient newPatient)
+	public void print()
 	{
-		if(this.nextPatient == null)
-		{
-			this.nextPatient = newPatient;
-		}
-		else
-		{
-			this.nextPatient.addPatient(newPatient);
-		}
+		System.out.println(this.name + ", " + this.age + ", " + this.illness);
 	}
 
-	public boolean deletePatient(String name)
-	{
-		if(this.nextPatient == null)
-		{
-			return false;
-		}
-		else if(this.nextPatient.name.equals(name))
-		{
-			this.nextPatient = nextPatient.nextPatient;
-			return true;
-		}
-		else
-		{
-			return this.nextPatient.deletePatient(name);
-		}
+	public String getName() {
+		return this.name;
 	}
 
-	public void printPatient()
-	{
-	
-		
-			System.out.println(this.name + ", " + this.age + ", " + this.illness);
-		
-		if(this.nextPatient != null)
-		{
-			this.nextPatient.printPatient();
-		}
+	public Patient getNextPatient() {
+		return this.nextPatient;
+	}
 
+	public void setNextPatient(Patient patient) {
+		this.nextPatient = patient;
 	}
 
 }

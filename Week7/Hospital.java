@@ -1,23 +1,60 @@
 public class Hospital
 {
-public static void main(String[] args)
+
+	private String name;
+	private Patient head;
+
+	public Hospital(String name)
 	{
-		Patient patient1 = new Patient("Graeme", 12, "Rabies");
-		patient1.addPatient(new Patient("Dan", 22, "Flu"));
-		patient1.addPatient(new Patient("Phil", 21, "Broken leg"));
-		patient1.addPatient(new Patient("Mark", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Jess", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Alice", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Harry", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Sparky", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Fluffy", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Samuel", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Terry", 17, "Tummy bug"));
-		patient1.addPatient(new Patient("Simon", 17, "Tummy bug"));
-		//Patient patient2 = new Patient("Jake", 32, "large case of boils");
-		//patient1.addPatient(patient2);
-		patient1.printPatient();
-		patient1.deletePatient("Simon");
-		patient1.printPatient();
+		this.name = name;
 	}
+
+	public void printPatients() 
+	{
+		Patient element = head;
+		System.out.println("Patients of " + this.name);
+
+		while (element != null) {
+			element.print();
+			element = element.getNextPatient();
+		}
+	}
+
+	public void addPatient(Patient patient) 
+	{
+		if (head == null) {
+			head = patient;
+		} else {
+			Patient element = head;
+
+			while (element.getNextPatient() != null) {
+				element = element.getNextPatient();
+			}
+			element.setNextPatient(patient);
+		}
+	}
+
+	public void deletePatientByName(String name)
+	{
+		if (head == null) {
+			return;
+		}
+
+		if (head.getName().equals(name)) {
+			head = head.getNextPatient();
+		} else {
+			Patient element = head;
+			Patient nextElement = element.getNextPatient();
+
+			while (nextElement != null) {
+				if (nextElement.getName().equals(name)) {
+					element.setNextPatient(nextElement.getNextPatient());
+				}
+
+				element = element.getNextPatient();
+				nextElement = nextElement.getNextPatient();
+			}
+		}
+	}
+
 }
