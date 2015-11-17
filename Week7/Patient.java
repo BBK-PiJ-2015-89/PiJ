@@ -18,15 +18,18 @@ public class Patient
 		System.out.println(this.name + ", " + this.age + ", " + this.illness);
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return this.name;
 	}
 
-	public Patient getNextPatient() {
+	public Patient getNextPatient() 
+	{
 		return this.nextPatient;
 	}
 
-	public void setNextPatient(Patient patient) {
+	public void setNextPatient(Patient patient) 
+	{
 		this.nextPatient = patient;
 	}
 

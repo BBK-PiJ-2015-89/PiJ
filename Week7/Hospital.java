@@ -14,7 +14,8 @@ public class Hospital
 		Patient element = head;
 		System.out.println("Patients of " + this.name);
 
-		while (element != null) {
+		while (element != null) 
+		{
 			element.print();
 			element = element.getNextPatient();
 		}
@@ -22,12 +23,16 @@ public class Hospital
 
 	public void addPatient(Patient patient) 
 	{
-		if (head == null) {
+		if (head == null) 
+		{
 			head = patient;
-		} else {
+		} 
+		else 
+		{
 			Patient element = head;
 
-			while (element.getNextPatient() != null) {
+			while (element.getNextPatient() != null) 
+			{
 				element = element.getNextPatient();
 			}
 			element.setNextPatient(patient);
@@ -40,14 +45,19 @@ public class Hospital
 			return;
 		}
 
-		if (head.getName().equals(name)) {
+		if (head.getName().equals(name)) 
+		{
 			head = head.getNextPatient();
-		} else {
+		} 
+		else 
+		{
 			Patient element = head;
 			Patient nextElement = element.getNextPatient();
 
-			while (nextElement != null) {
-				if (nextElement.getName().equals(name)) {
+			while (nextElement != null) 
+			{
+				if (nextElement.getName().equals(name)) 
+				{
 					element.setNextPatient(nextElement.getNextPatient());
 				}
 
