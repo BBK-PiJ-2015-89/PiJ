@@ -16,6 +16,7 @@ public class Spy {
 		spyCount--;
 		System.out.println("Count of Spies: " + spyCount);
 	}
+	
 	public static void main(String[] args) {
 		Spy spy1 = new Spy(1007);
 		Spy spy2 = new Spy(1002);
