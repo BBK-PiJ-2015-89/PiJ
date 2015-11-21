@@ -16,10 +16,9 @@ public class HospitalDBL
 	{
 		PatientDBL element = head;
 		System.out.println("Patients of " + this.name);
-
+		System.out.println("Patients in order: ");
 		while (element != null) 
 		{
-			System.out.println("Patients in order: ");
 			element.print();
 			element = element.getNextPatient();
 		}
@@ -29,12 +28,13 @@ public class HospitalDBL
 		{
 			element = element.getNextPatient();
 		}
+		System.out.println("Patients in reverse: ");
 		while (element.getPrevPatient() != null) 
 		{
-			System.out.println("Patients in reverse: ");
 			element.print();
 			element = element.getPrevPatient();
 		}
+		element.print();
 	}
 
 	public void addPatient(PatientDBL patientDBL) 
@@ -78,7 +78,10 @@ public class HospitalDBL
 				if (nextElement.getName().equals(name)) 
 				{
 					element.setNextPatient(nextElement.getNextPatient());
+					if (nextElement.getNextPatient() != null)
+					{
 					nextElement.getNextPatient().setPrevPatient(element);
+					}
 					this.count--;
 				}
 
