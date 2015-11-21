@@ -4,6 +4,7 @@ public class Patient
 	private int age; 
 	private String illness;
 	private Patient nextPatient;
+	private Patient prevPatient;
 
 	public Patient(String name, int age, String illness)
 	{
@@ -11,6 +12,7 @@ public class Patient
 		this.age = age;
 		this.illness = illness;
 		this.nextPatient = null;
+		this.prevPatient = null;
 	}	
 
 	public void print()
@@ -28,9 +30,18 @@ public class Patient
 		return this.nextPatient;
 	}
 
+	public Patient getPrevPatient() 
+	{
+		return this.prevPatient;
+	}
+
 	public void setNextPatient(Patient patient) 
 	{
 		this.nextPatient = patient;
+	}
+	public void setPrevPatient(Patient patient) 
+	{
+		this.prevPatient = patient;
 	}
 
 }

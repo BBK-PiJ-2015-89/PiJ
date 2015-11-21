@@ -19,8 +19,21 @@ public class Hospital
 
 		while (element != null) 
 		{
+			System.out.println("Patients in order: ");
 			element.print();
 			element = element.getNextPatient();
+		}
+
+		Patient element = head;
+		while(element.getNextPatient!=null)
+		{
+			element = element.getNextPatient
+		}
+		while (element.getPrevPatient() != null) 
+		{
+			System.out.println("Patients in reverse: ");
+			element.print();
+			element = element.getPrevPatient();
 		}
 	}
 
@@ -39,6 +52,7 @@ public class Hospital
 				element = element.getNextPatient();
 			}
 			element.setNextPatient(patient);
+			patient.setPrevPatient(element);
 		}
 		this.count++;
 	}
@@ -52,6 +66,7 @@ public class Hospital
 		if (head.getName().equals(name)) 
 		{
 			head = head.getNextPatient();
+			head.getPrevPatient() = null;
 		} 
 		else 
 		{
@@ -63,6 +78,7 @@ public class Hospital
 				if (nextElement.getName().equals(name)) 
 				{
 					element.setNextPatient(nextElement.getNextPatient());
+					nextElement.getNextPatient().setPrevPatient(element);
 					this.count--;
 				}
 
