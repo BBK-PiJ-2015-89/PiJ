@@ -2,7 +2,7 @@ public class HospitalExampleDBL
 {
 	public static void main(String[] args)
 	{
-		HospitalDBL uch = new HospitalDBL("UCH HospitalDBL");
+		HospitalDBL uch = new HospitalDBL("UCH Hospital");
 		uch.addPatient(new PatientDBL("Graeme", 12, "Rabies"));
 		uch.addPatient(new PatientDBL("Dan", 22, "Flu"));
 		uch.addPatient(new PatientDBL("Phil", 21, "Broken leg"));
@@ -16,7 +16,10 @@ public class HospitalExampleDBL
 		uch.addPatient(new PatientDBL("Terry", 17, "Tummy bug"));
 		uch.addPatient(new PatientDBL("Simon", 17, "Tummy bug"));
 		System.out.println("The number of patients in this hospital is: " + uch.getCount());
+		uch.printPatients();
 		uch.deletePatientByName("Simon");
+		uch.deletePatientByName("Graeme");
+		uch.deletePatientByName("Penelope");
 		uch.printPatients();
 		System.out.println("The number of patients in this hospital is: " + uch.getCount());
 

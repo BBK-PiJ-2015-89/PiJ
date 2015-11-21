@@ -4,11 +4,13 @@ public class HospitalDBL
 	private String name;
 	private PatientDBL head;
 	private int count;
+	private PatientDBL tail;
 
 	public HospitalDBL(String name)
 	{
 		this.name = name;
 		this.head = null;
+		this.tail = null;
 		this.count = 0;
 	}
 
@@ -23,18 +25,14 @@ public class HospitalDBL
 			element = element.getNextPatient();
 		}
 
-		element = head;
-		while(element.getNextPatient()!=null)
-		{
-			element = element.getNextPatient();
-		}
+		element = tail;
+		
 		System.out.println("Patients in reverse: ");
-		while (element.getPrevPatient() != null) 
+		while (element != null) 
 		{
 			element.print();
 			element = element.getPrevPatient();
 		}
-		element.print();
 	}
 
 	public void addPatient(PatientDBL patientDBL) 
@@ -42,6 +40,7 @@ public class HospitalDBL
 		if (head == null) 
 		{
 			head = patientDBL;
+			tail = patientDBL;
 		} 
 		else 
 		{
@@ -53,6 +52,7 @@ public class HospitalDBL
 			}
 			element.setNextPatient(patientDBL);
 			patientDBL.setPrevPatient(element);
+			tail = patientDBL;
 		}
 		this.count++;
 	}
@@ -67,6 +67,7 @@ public class HospitalDBL
 		{
 			head = head.getNextPatient();
 			head.setPrevPatient(null);
+			this.count--;
 		} 
 		else 
 		{
@@ -88,6 +89,10 @@ public class HospitalDBL
 				element = element.getNextPatient();
 				nextElement = nextElement.getNextPatient();
 			}
+		}
+		if (tail.getName().equals(name))
+		{
+			tail = tail.getPrevPatient();
 		}
 	}
 
