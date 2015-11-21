@@ -15,12 +15,15 @@ public class HospitalExample
 		uch.addPatient(new Patient("Samuel", 17, "Tummy bug"));
 		uch.addPatient(new Patient("Terry", 17, "Tummy bug"));
 		uch.addPatient(new Patient("Simon", 17, "Tummy bug"));
+		System.out.println("The number of patients in this hospital is: " + uch.getCount());
 		uch.deletePatientByName("Simon");
 		uch.printPatients();
+		System.out.println("The number of patients in this hospital is: " + uch.getCount());
 
 		Hospital royal = new Hospital("Royal Hospital");
 		royal.addPatient(new Patient("Queen", 89, "Altzheimer"));
 		royal.printPatients();
+		System.out.println("The number of patients in this hospital is: " + royal.getCount());
 
 		//Patient patient2 = new Patient("Jake", 32, "large case of boils");
 		//patient1.addPatient(patient2);

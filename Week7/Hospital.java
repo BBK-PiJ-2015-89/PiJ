@@ -3,10 +3,13 @@ public class Hospital
 
 	private String name;
 	private Patient head;
+	private int count;
 
 	public Hospital(String name)
 	{
 		this.name = name;
+		this.head = null;
+		this.count = 0;
 	}
 
 	public void printPatients() 
@@ -37,6 +40,7 @@ public class Hospital
 			}
 			element.setNextPatient(patient);
 		}
+		this.count++;
 	}
 
 	public void deletePatientByName(String name)
@@ -59,6 +63,7 @@ public class Hospital
 				if (nextElement.getName().equals(name)) 
 				{
 					element.setNextPatient(nextElement.getNextPatient());
+					this.count--;
 				}
 
 				element = element.getNextPatient();
@@ -67,4 +72,8 @@ public class Hospital
 		}
 	}
 
+	public int getCount()
+	{
+		return this.count;
+	}
 }
