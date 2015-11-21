@@ -1,11 +1,11 @@
-public class Hospital
+public class HospitalDBL
 {
 
 	private String name;
-	private Patient head;
+	private PatientDBL head;
 	private int count;
 
-	public Hospital(String name)
+	public HospitalDBL(String name)
 	{
 		this.name = name;
 		this.head = null;
@@ -14,7 +14,7 @@ public class Hospital
 
 	public void printPatients() 
 	{
-		Patient element = head;
+		PatientDBL element = head;
 		System.out.println("Patients of " + this.name);
 
 		while (element != null) 
@@ -24,10 +24,10 @@ public class Hospital
 			element = element.getNextPatient();
 		}
 
-		Patient element = head;
-		while(element.getNextPatient!=null)
+		element = head;
+		while(element.getNextPatient()!=null)
 		{
-			element = element.getNextPatient
+			element = element.getNextPatient();
 		}
 		while (element.getPrevPatient() != null) 
 		{
@@ -37,22 +37,22 @@ public class Hospital
 		}
 	}
 
-	public void addPatient(Patient patient) 
+	public void addPatient(PatientDBL patientDBL) 
 	{
 		if (head == null) 
 		{
-			head = patient;
+			head = patientDBL;
 		} 
 		else 
 		{
-			Patient element = head;
+			PatientDBL element = head;
 
 			while (element.getNextPatient() != null) 
 			{
 				element = element.getNextPatient();
 			}
-			element.setNextPatient(patient);
-			patient.setPrevPatient(element);
+			element.setNextPatient(patientDBL);
+			patientDBL.setPrevPatient(element);
 		}
 		this.count++;
 	}
@@ -66,12 +66,12 @@ public class Hospital
 		if (head.getName().equals(name)) 
 		{
 			head = head.getNextPatient();
-			head.getPrevPatient() = null;
+			head.setPrevPatient(null);
 		} 
 		else 
 		{
-			Patient element = head;
-			Patient nextElement = element.getNextPatient();
+			PatientDBL element = head;
+			PatientDBL nextElement = element.getNextPatient();
 
 			while (nextElement != null) 
 			{

@@ -1,12 +1,12 @@
-public class Patient
+public class PatientDBL
 {
 	private String name;
 	private int age; 
 	private String illness;
-	private Patient nextPatient;
-	private Patient prevPatient;
+	private PatientDBL nextPatient;
+	private PatientDBL prevPatient;
 
-	public Patient(String name, int age, String illness)
+	public PatientDBL(String name, int age, String illness)
 	{
 		this.name = name;
 		this.age = age;
@@ -25,23 +25,23 @@ public class Patient
 		return this.name;
 	}
 
-	public Patient getNextPatient() 
+	public PatientDBL getNextPatient() 
 	{
 		return this.nextPatient;
 	}
 
-	public Patient getPrevPatient() 
+	public PatientDBL getPrevPatient() 
 	{
 		return this.prevPatient;
 	}
 
-	public void setNextPatient(Patient patient) 
+	public void setNextPatient(PatientDBL patientDBL) 
 	{
-		this.nextPatient = patient;
+		this.nextPatient = patientDBL;
 	}
-	public void setPrevPatient(Patient patient) 
+	public void setPrevPatient(PatientDBL patientDBL) 
 	{
-		this.prevPatient = patient;
+		this.prevPatient = patientDBL;
 	}
 
 }
