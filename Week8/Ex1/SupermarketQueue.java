@@ -30,6 +30,7 @@ public class SupermarketQueue implements PersonQueue
     public void retrieve()
     {
     	if (head == null) {
+			System.out.println("No one is in the queue, take a break!");
 			return;
 		}
 		else if (head.getNextPerson() == null)
