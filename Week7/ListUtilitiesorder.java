@@ -7,7 +7,7 @@ public class ListUtilitiesorder
 		uch.addValue(new IntValue(1));
 		
 		IntListorder arraytype = new IntListorder("Array List");
-		int[] a = {1,3,5,7,8,10,28,76,102,101,65,72};
+		int[] a = {2,1,5,7,8,10,28,76,102,101,65,72};
 		arraytype.arraySetter(a);
 		uch.printValue();
 		arraytype.printValue();

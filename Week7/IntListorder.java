@@ -44,13 +44,22 @@ public class IntListorder
 		else
 		{
 			IntValue element = head;
+			System.out.println(number.getValue() + "test");
+			
+			
 
-			while (element.getNextValue().getValue()<number.getValue() && element.getNextValue()!=null)
+			while (element.getNextValue()!=null && element.getNextValue().getValue()<number.getValue())
 			{
 				element = element.getNextValue();
 			}
-			number.setNextValue(element.getNextValue());
-			element.setNextValue(number);
+			if (element.getNextValue()==null)
+			{
+				element.setNextValue(number);
+			}
+			else{
+				number.setNextValue(element.getNextValue());
+				element.setNextValue(number);
+			}
 		}
 	}
 }
