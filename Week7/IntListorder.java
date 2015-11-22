@@ -44,10 +44,7 @@ public class IntListorder
 		else
 		{
 			IntValue element = head;
-			System.out.println(number.getValue() + "test");
 			
-			
-
 			while (element.getNextValue()!=null && element.getNextValue().getValue()<number.getValue())
 			{
 				element = element.getNextValue();
