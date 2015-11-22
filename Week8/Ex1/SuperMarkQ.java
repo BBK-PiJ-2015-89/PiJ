@@ -5,14 +5,14 @@ public class SuperMarkQ {
     }
     public void launch() {
 	  PersonQueue sainsburys = new SupermarketQueue("sainsburys");
-	  testqueue(sainsburys);
+	  testqueue(sainsburys, "Sainsbury's");
 	  PersonQueue tesco = new SupermarketQueue("Teso");
-	  testqueue(tesco);
+	  testqueue(tesco, "Tesco");
     }
 
-    public void testqueue(PersonQueue name)
+    public void testqueue(PersonQueue name, String supermarket)
     {
-    	System.out.println("Adding customers to the queue in " + name);
+    	System.out.println("Adding customers to the queue in " + supermarket);
     	name.insert(new Person("John"));
     	name.insert(new Person("Happy"));
     	name.insert(new Person("Michael"));
@@ -20,6 +20,9 @@ public class SuperMarkQ {
     	name.insert(new Person("Rebecca"));
     	name.insert(new Person("Charly"));
     	name.retrieve();
+        name.retrieve();
+        name.retrieve();
+        name.retrieve();
 
     }
 }
