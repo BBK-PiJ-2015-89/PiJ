@@ -42,7 +42,7 @@ public class SupermarketQueue implements PersonQueue
 			Person element = head;
 			Person nextElement = element.getNextPerson();
 
-			while (nextElement != null) 
+			while (nextElement.getNextPerson() != null) 
 			{
 				element = element.getNextPerson();
 				nextElement = nextElement.getNextPerson();
