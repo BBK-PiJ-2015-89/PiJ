@@ -12,11 +12,11 @@ public class SuperMarkQScript {
     {
     	System.out.println("Adding customers to the queue in " + supermarket);
     	name.addPerson(new Person("John", 77));
-    	name.addPerson(new Person("Happy", 43));
-    	name.addPerson(new Person("Michael", 4));
-    	name.addPerson(new Person("Alice", 45));
+    	name.addPerson(new Person("Happy", 2));
+    	name.addPerson(new Person("Michael", 21));
+    	name.addPerson(new Person("Alice", 33));
     	name.addPerson(new Person("Rebecca", 90));
-    	name.addPerson(new Person("Charly", 14));
+    	name.addPerson(new Person("Charly", 66));
     	name.servePerson();
         name.servePerson();
         name.servePerson();

@@ -13,7 +13,7 @@ public class Person
 
 	public void print()
 	{
-		System.out.println("Name: " + this.name + " Age " + this.age);
+		System.out.println("Name: " + this.name + " Age: " + this.age);
 	}
 
 	public String getName() 

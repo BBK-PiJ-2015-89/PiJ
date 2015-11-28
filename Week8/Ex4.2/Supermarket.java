@@ -1,7 +1,7 @@
 public class Supermarket{
 
 	private String name = null;
-	private PersonQueue queue1 = new AgeQueue();
+	private PersonQueue queue1 = new Over65sAgeQueue();
 
 	public Supermarket(String name){
 		this.name = name;
