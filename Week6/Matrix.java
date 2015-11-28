@@ -109,9 +109,9 @@ public class Matrix
 			
 			for (int j=0; j<m[0].length; j++)
 			{
-				System.out.print(m[i][j]+",");
+				System.out.print(m[i][j]+"\t");
 			}
-			System.out.println('\t');
+			System.out.println("");
 			
 		}
 	}
