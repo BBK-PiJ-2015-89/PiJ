@@ -4,5 +4,5 @@ public interface PersonQueue
 	void insert(Person person);
 
 	//Removes a person from the queue
-	void retrieve();
+	Person retrieve();
 }

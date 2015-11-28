@@ -1,2 +1,4 @@
 /Designs
 *.class
+.DS_Store
+.idea
