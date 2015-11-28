@@ -29,6 +29,7 @@ public class SupermarketQueue implements PersonQueue
 
     public void retrieve()
     {
+    	System.out.println("Call");
     	if (head == null) {
 			System.out.println("No one is in the queue, take a break!");
 			return;
@@ -40,16 +41,15 @@ public class SupermarketQueue implements PersonQueue
 		}
 		else 
 		{
-			Person element = head;
-			Person nextElement = element.getNextPerson();
 
-			while (nextElement.getNextPerson() != null) 
+			while (head.getNextPerson() != null) 
 			{
-				element = element.getNextPerson();
-				nextElement = nextElement.getNextPerson();
+				System.out.println("Serving "+head.getName() + " more persons to follow");
+				//head.setNextPerson(nextElement.getNextPerson());
+				head = head.getNextPerson();
 			}
-			System.out.println("Serving " + nextElement.getName() + " more persons to follow");
-			element.setNextPerson(nextElement.getNextPerson());
+			System.out.println("Serving " + head.getName() + " No more persons to follow");
+			
 		}
 	}	
 }
