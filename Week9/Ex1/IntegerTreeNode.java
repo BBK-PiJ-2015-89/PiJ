@@ -108,7 +108,7 @@ public class IntegerTreeNode implements IntegerTree
 	{
         String result;
         result = "";
-        result = result + "[" + Integer.toString(this.value) + " ";
+        result = result + "[" + Integer.toString(this.value);
 
         if (this.left == null) 
         {
@@ -119,10 +119,10 @@ public class IntegerTreeNode implements IntegerTree
         }
         if (this.right == null) 
         {
-            result = result + " R[]";
+            result = result + "R[]";
         } else 
         {
-            result = result + " R" + this.right.toString();
+            result = result + "R" + this.right.toString();
         }
         result = result + "]";
         return result;
@@ -131,15 +131,15 @@ public class IntegerTreeNode implements IntegerTree
     {
     	String result;
     	result = "";
-    	result = result + "[" + Integer.toString(this.value) + " ";
+    	result = result + "[" + Integer.toString(this.value);
 
     	if(this.left !=null)
     	{
-    		result = result + " " + this.left.simpletoString();
+    		result = result  + this.left.simpletoString();
     	}
     	if(this.right !=null)
     	{
-    		result = result + " " + this.right.simpletoString();
+    		result = result  + this.right.simpletoString();
     	}
     	result = result + "]";
     	return result;
