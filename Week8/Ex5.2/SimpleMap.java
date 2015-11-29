@@ -11,9 +11,9 @@ public class SimpleMap implements SimpleMapInter
 		else 
 		{
 			MapItem temp = head;
-			while (head.getNext() != null)
+			while (temp.getNext() != null)
 			{
-				temp = head.getNext();
+				temp = temp.getNext();
 			}
 			temp.setNext(new MapItem(key, name));
 		}
@@ -31,13 +31,13 @@ public class SimpleMap implements SimpleMapInter
 		else {
 			MapItem element = head;
 			MapItem nextElement = element.getNext();
-
 			while (element.getNext() != null) 
 			{
-				if (nextElement.getKey()==key) 
+				if (element.getKey()==key) 
 				{
-					return nextElement.getString();
+					return element.getString();
 				}
+				element = element.getNext();
 			}
 			return null;
 			
