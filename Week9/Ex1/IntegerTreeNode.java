@@ -103,4 +103,46 @@ public class IntegerTreeNode implements IntegerTree
 			return 1 + rightdepth;
 		}
 	}
+
+	public String toString() 
+	{
+        String result;
+        result = "";
+        result = result + "[" + Integer.toString(this.value) + " ";
+
+        if (this.left == null) 
+        {
+            result = result + "L[]";
+        } else 
+        {
+            result = result + "L" + this.left.toString();
+        }
+        if (this.right == null) 
+        {
+            result = result + " R[]";
+        } else 
+        {
+            result = result + " R" + this.right.toString();
+        }
+        result = result + "]";
+        return result;
+    }
+    public String simpletoString()
+    {
+    	String result;
+    	result = "";
+    	result = result + "[" + Integer.toString(this.value) + " ";
+
+    	if(this.left !=null)
+    	{
+    		result = result + " " + this.left.toString();
+    	}
+    	if(this.right !=null)
+    	{
+    		result = result + " " + this.right.toString();
+    	}
+    	result = result + "]";
+    	return result;
+    }
+
 }
