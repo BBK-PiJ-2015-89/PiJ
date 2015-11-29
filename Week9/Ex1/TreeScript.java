@@ -9,5 +9,6 @@ public class TreeScript
 		System.out.println("Max = " + root.getMax());
 		System.out.println("Min = " + root.getMin());
 		System.out.println(root.toString());
+		System.out.println(root.simpletoString());
 	}
 }

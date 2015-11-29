@@ -3,4 +3,5 @@ public interface IntegerTree {
 	boolean contains(int number);
 	int depth();
 	String toString();
+	String simpletoString();
 }
