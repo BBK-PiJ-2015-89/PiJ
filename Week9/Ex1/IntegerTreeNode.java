@@ -135,11 +135,11 @@ public class IntegerTreeNode implements IntegerTree
 
     	if(this.left !=null)
     	{
-    		result = result + " " + this.left.toString();
+    		result = result + " " + this.left.simpletoString();
     	}
     	if(this.right !=null)
     	{
-    		result = result + " " + this.right.toString();
+    		result = result + " " + this.right.simpletoString();
     	}
     	result = result + "]";
     	return result;
