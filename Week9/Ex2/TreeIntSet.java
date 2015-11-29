@@ -103,7 +103,7 @@ public TreeIntSet(int n)
     {
     	String result;
     	result = "";
-    	result = result + "[" + Integer.toString(this.value) + ",";
+    	result = result  + Integer.toString(this.value) + ",";
 
     	if(this.left !=null)
     	{
@@ -113,7 +113,7 @@ public TreeIntSet(int n)
     	{
     		result = result  + this.right.toString();
     	}
-    	result = result + "]";
+    	result = result;
     	return result;
     }
 }
