@@ -69,32 +69,34 @@ public TreeIntSet(int n)
 	}
 	public boolean containsVerbose(int n)
 	{
+		System.out.println(this.value);
 		if (n == this.value)
 		{
+			
 			return true;
 		}
 		else if (n > this.value)
-		{
+		{	
 			if (right == null)
 			{
 				return false;
 			}
 			else
 			{
-				System.out.println(this.value);
-				return right.contains(n);
+				
+				return right.containsVerbose(n);
 			}
 		}
 		else
 		{
+			System.out.println(this.value);
 			if (left == null)
 			{
 				return false;
 			}
 			else
 			{
-				System.out.println(this.value);
-				return left.contains(n);
+				return left.containsVerbose(n);
 			}
 		}
 	}
@@ -113,7 +115,6 @@ public TreeIntSet(int n)
     	{
     		result = result  + this.right.toString();
     	}
-    	result = result;
     	return result;
     }
 }
