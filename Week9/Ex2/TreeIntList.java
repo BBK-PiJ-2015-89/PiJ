@@ -2,6 +2,11 @@ public class TreeIntList implements IntSet{
 
 	private ListItem head;
 
+	public TreeIntList(int n)
+	{
+		ListItem newItem = new ListItem(n);
+		head = newItem;
+	}
 	
 	public void add (int n){
 
