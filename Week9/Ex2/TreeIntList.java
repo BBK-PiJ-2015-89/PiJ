@@ -44,8 +44,13 @@ public class TreeIntList implements IntSet{
 				{
 					return true;
 				}
+				else
+				{
+					element = element.getNext();
+				}
 			}
 			return false;
 	}
+
 
 }
