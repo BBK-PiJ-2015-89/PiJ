@@ -4,4 +4,6 @@ public interface IntegerTree {
 	int depth();
 	String toString();
 	String simpletoString();
+	int getMax();
+	int getMin();
 }

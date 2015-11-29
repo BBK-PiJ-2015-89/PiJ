@@ -1,7 +1,7 @@
 public class TreeScript
 {
 	public static void main(String[] args) {
-		IntegerTreeNode root = new IntegerTreeNode(6);
+		IntegerTree root = new IntegerTreeNode(6);
 		root.add(5);
 		root.add(9);
 		root.add(3);
