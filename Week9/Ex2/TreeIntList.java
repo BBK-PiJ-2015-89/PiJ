@@ -5,7 +5,7 @@ public class TreeIntList implements IntSet{
 	
 	public void add (int n){
 
-	publicListItem newItem = new ListItem(n);
+	ListItem newItem = new ListItem(n);
 	
 	if (head == null) 
 		{
@@ -15,9 +15,9 @@ public class TreeIntList implements IntSet{
 		{
 		 ListItem element = head;
 
-			while (element.getNextPatient() != null) 
+			while (element.getNext() != null) 
 			{
-				if (element.getValue().equals(n) || element.getNext().getValue().equals(n))
+				if (element.getValue()==n || element.getNext().getValue()==n)
 				{
 					return;
 				}
@@ -32,7 +32,7 @@ public class TreeIntList implements IntSet{
 
 	public boolean contains(int n)
 	{
-		if (head.getValue().equals(n))
+		if (head.getValue()==n)
 		{
 			return true;
 		}
@@ -40,7 +40,29 @@ public class TreeIntList implements IntSet{
 
 			while (element.getNext() != null) 
 			{
-				if (element.getValue().equals(n)) 
+				if (element.getValue()==n) 
+				{
+					return true;
+				}
+				else
+				{
+					element = element.getNext();
+				}
+			}
+			return false;
+	}
+	public boolean containsVerbose(int n)
+	{
+		if (head.getValue()==n)
+		{
+			return true;
+		}
+			ListItem element = head;
+
+			while (element.getNext() != null) 
+			{
+				System.out.println(element.getValue());
+				if (element.getValue()==n) 
 				{
 					return true;
 				}
@@ -52,5 +74,27 @@ public class TreeIntList implements IntSet{
 			return false;
 	}
 
+	public String toString()
+	{
+		if(head==null)
+		{
+			return "nothing is in the list";
+		}
+		else if (head.getNext()==null)
+		{
+			return Integer.toString(head.getValue());
+		}
+		else
+		{
+			String tempStr = "";
+			ListItem temphead = head;
 
+			while (temphead!=null)
+			{
+				tempStr += Integer.toString(temphead.getValue())+", ";
+				temphead = temphead.getNext();
+			}
+			return tempStr;
+		}
+	}
 }

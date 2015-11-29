@@ -14,12 +14,12 @@ public class ListItem {
 		System.out.println(this.value);
 	}
 
-	public String getValue() 
+	public int getValue() 
 	{
 		return this.value;
 	}
 
-	public Patient getNext() 
+	public ListItem getNext() 
 	{
 		return this.next;
 	}

@@ -1,7 +1,7 @@
 public class TreeIntScript
 {
 	public static void main(String[] args) {
-		IntSet root = new TreeIntSet(6);
+		IntSet root = new TreeIntList(6);
 		root.add(5);
 		root.add(7);
 		root.add(8);
