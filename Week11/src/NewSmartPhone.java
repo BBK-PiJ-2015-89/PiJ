@@ -3,9 +3,10 @@
  */
 public class NewSmartPhone {
     public static void main(String[] args) {
-        SmartPhone myPhone=new SmartPhone();
-        myPhone.ringAlarm("Alarm test");
-        System.out.println(myPhone.findPosition());
-        System.out.println(myPhone.hashCode());
+        MobilePhone myPhone=new SmartPhone();
+        SmartPhone mysmartphone =(SmartPhone)myPhone;
+        mysmartphone.ringAlarm("Alarm test");
+        System.out.println(mysmartphone.findPosition());
+        System.out.println(mysmartphone.hashCode());
     }
 }
