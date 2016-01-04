@@ -4,9 +4,12 @@
 public class NewSmartPhone {
     public static void main(String[] args) {
         MobilePhone myPhone=new SmartPhone();
-        SmartPhone mysmartphone =(SmartPhone)myPhone;
+
+        SmartPhone mysmartphone =(SmartPhone)myPhone; //casting smart phone
         mysmartphone.ringAlarm("Alarm test");
         System.out.println(mysmartphone.findPosition());
         System.out.println(mysmartphone.hashCode());
+
+        SmartPhone testPhone(NewSmartPhone)
     }
 }
