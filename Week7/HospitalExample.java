@@ -1,3 +1,4 @@
+package Week7;
 public class HospitalExample
 {
 	public static void main(String[] args)

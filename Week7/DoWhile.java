@@ -1,3 +1,4 @@
+package Week7;
 public class DoWhile
 {
 	public static void main(String[] Args)

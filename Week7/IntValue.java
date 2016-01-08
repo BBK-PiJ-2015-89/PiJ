@@ -1,3 +1,4 @@
+package Week7;
 public class IntValue
 {
 	private int value;
