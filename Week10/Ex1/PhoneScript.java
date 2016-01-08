@@ -1,8 +1,10 @@
+package Week10.Ex1;
+
 public class PhoneScript
 {
 	public static void main (String[] args)
 	{
-		PhoneScript script = new PhoneScript();
+		Week11.PhoneScript script = new Week11.PhoneScript();
 		script.launch();
 	}
 

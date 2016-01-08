@@ -1,4 +1,6 @@
-public class SmartPhone extends MobilePhone{
+package Week11;
+
+public class SmartPhone extends MobilePhone {
 
 	public void browseWeb(String s)
 	{

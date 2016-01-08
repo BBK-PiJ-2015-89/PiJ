@@ -1,5 +1,6 @@
+package Week10.Ex2;
 import java.util.ArrayList;
-public class MobilePhone extends OldPhone{
+public class MobilePhone extends Week11.OldPhone {
 
 	ArrayList<String> numbers = new ArrayList<String>();
 
