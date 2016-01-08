@@ -1,3 +1,5 @@
+package Week7;
+
 public class Spy {
 	private static int spyCount = 0;
 	private int ID;

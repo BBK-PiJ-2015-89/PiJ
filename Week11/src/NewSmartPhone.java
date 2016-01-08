@@ -9,7 +9,13 @@ public class NewSmartPhone {
         mysmartphone.ringAlarm("Alarm test");
         System.out.println(mysmartphone.findPosition());
         System.out.println(mysmartphone.hashCode());
+        testPhone(new MobilePhone());
 
-        SmartPhone testPhone(NewSmartPhone)
+    }
+    private static void testPhone(Phone p){
+        p.call("Mum");
+        SmartPhone mySmartPhone = (SmartPhone) p;
+        mySmartPhone.
+
     }
 }
