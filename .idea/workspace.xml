@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week11/Q5/Stack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week11/Q5/Stack.java" afterPath="$PROJECT_DIR$/Week11/Q5/Stack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiJ.iws" />
@@ -62,8 +62,8 @@
       <file leaf-file-name="Stack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week11/Q5/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06451613">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.67741936">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding>
                 <element signature="e#176#177#0" expanded="true" />
                 <element signature="e#208#209#0" expanded="true" />
@@ -640,7 +640,7 @@
       <workItem from="1452362770372" duration="868000" />
       <workItem from="1452441279243" duration="7000000" />
       <workItem from="1452452491319" duration="1104000" />
-      <workItem from="1452454282185" duration="498000" />
+      <workItem from="1452454282185" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="updating for intellji">
       <created>1452293117231</created>
@@ -702,11 +702,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452454792849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Question 5 update stack method">
+      <created>1452454843829</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1452454843829</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15705000" />
+    <option name="totallyTimeSpent" value="15748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -783,7 +789,8 @@
     <MESSAGE value="sorting out questioin 3" />
     <MESSAGE value="sorting out question 3" />
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Question 5 update stack method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question 5 update stack method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1179,8 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week11/Q5/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06451613">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.67741936">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding>
             <element signature="e#176#177#0" expanded="true" />
             <element signature="e#208#209#0" expanded="true" />
