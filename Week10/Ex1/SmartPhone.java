@@ -1,5 +1,6 @@
 package Week10.Ex1;
-public class SmartPhone extends Week11.MobilePhone {
+
+public class SmartPhone extends Week11.Q2Package.MobilePhone {
 
 	public void browseWeb(String s)
 	{

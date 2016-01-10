@@ -1,4 +1,4 @@
-package Week11;
+package Week11.Q2Package;
 
 /**
 * A phone makes calls
