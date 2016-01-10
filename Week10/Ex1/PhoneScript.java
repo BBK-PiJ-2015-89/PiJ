@@ -4,7 +4,7 @@ public class PhoneScript
 {
 	public static void main (String[] args)
 	{
-		Week11.PhoneScript script = new Week11.PhoneScript();
+		PhoneScript script = new PhoneScript();
 		script.launch();
 	}
 

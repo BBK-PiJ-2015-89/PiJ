@@ -1,3 +1,4 @@
+package Week6;
 public class ArrayCopier
 {
 	public static void main(String[] args)
