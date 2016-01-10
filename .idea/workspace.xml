@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java" afterPath="$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week11/Q3Package/Company.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Week11/Q3Package/TestScriptDoubleLnkedList.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week11/Q3Package/LinkedListEx.java" afterPath="$PROJECT_DIR$/Week11/Q3Package/LinkedListEx.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
               <folding>
                 <element signature="e#525#526#0" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
@@ -45,8 +46,18 @@
       <file leaf-file-name="LinkedListEx.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week11/Q3Package/LinkedListEx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61290324">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.17741935">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week11/Q3Package/Company.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,9 +115,10 @@
         <option value="$PROJECT_DIR$/Week11/Q2.java" />
         <option value="$PROJECT_DIR$/Week11/Q2Package/Q2.java" />
         <option value="$PROJECT_DIR$/Week11/Q3Package/PatientDBL.java" />
+        <option value="$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java" />
         <option value="$PROJECT_DIR$/Week11/Q3Package/TestScriptDoubleLnkedList.java" />
         <option value="$PROJECT_DIR$/Week11/Q3Package/LinkedListEx.java" />
-        <option value="$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java" />
+        <option value="$PROJECT_DIR$/Week11/Q3Package/Company.java" />
       </list>
     </option>
   </component>
@@ -591,7 +603,7 @@
       <workItem from="1452296212580" duration="24000" />
       <workItem from="1452338952498" duration="2204000" />
       <workItem from="1452362770372" duration="868000" />
-      <workItem from="1452441279243" duration="5417000" />
+      <workItem from="1452441279243" duration="6104000" />
     </task>
     <task id="LOCAL-00001" summary="updating for intellji">
       <created>1452293117231</created>
@@ -635,15 +647,21 @@
       <option name="project" value="LOCAL" />
       <updated>1452447817420</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sorting out question 3">
+      <created>1452450859927</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1452450859927</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12520000" />
+    <option name="totallyTimeSpent" value="13207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -662,7 +680,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -714,7 +732,8 @@
     <MESSAGE value="moving some files around" />
     <MESSAGE value="question 2 finished." />
     <MESSAGE value="sorting out questioin 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting out questioin 3" />
+    <MESSAGE value="sorting out question 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting out question 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1052,18 +1071,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week11/Q3Package/TestScriptDoubleLnkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week11/Q3Package/DblLinkedListObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
           <folding>
             <element signature="e#525#526#0" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
@@ -1073,10 +1084,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Week11/Q3Package/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Week11/Q3Package/LinkedListEx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61290324">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.17741935">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>

@@ -38,12 +38,12 @@ public class LinkedListEx
 		}
 	}
 
-	public void addPatient(DblLinkedListObject DblLinkedListObject)
+	public void addPatient(DblLinkedListObject dblLinkedListObject)
 	{
 		if (head == null) 
 		{
-			head = DblLinkedListObject;
-			tail = DblLinkedListObject;
+			head = dblLinkedListObject;
+			tail = dblLinkedListObject;
 		} 
 		else 
 		{
@@ -53,9 +53,9 @@ public class LinkedListEx
 			{
 				element = element.getNextPatient();
 			}
-			element.setNextPatient(DblLinkedListObject);
-			DblLinkedListObject.setPrevPatient(element);
-			tail = DblLinkedListObject;
+			element.setNextPatient(dblLinkedListObject);
+			dblLinkedListObject.setPrevPatient(element);
+			tail = dblLinkedListObject;
 		}
 		this.count++;
 	}
