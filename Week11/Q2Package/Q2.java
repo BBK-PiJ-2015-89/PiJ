@@ -5,7 +5,7 @@ package Week11.Q2Package;
  */
 public class Q2 {
 
-    //public static MobilePhone myPhone;
+    public static MobilePhone myPhone;
 
     public static void main(String[] args) {
         test1();
@@ -33,19 +33,19 @@ public class Q2 {
     }
     //2.2 above will now compile with this direct upcasting method.
 
-    /*private static void test3(Phone p){
+    private static void test3(Phone p){
         p.call("Mum");
 //        p.browseWeb("www.google.co.uk");
 //        p.playGame("Snake");
 //        p.ringAlarm("8am");
 //only call works
-    }*/
+    }
 
-    /*private static void test4(Phone p){
+    private static void test4(Phone p){
         SmartPhone sp = (SmartPhone) p;
         sp.ringAlarm("8am");
         sp.findPosition();
-        sp.printLastNumbers();*/
+        sp.printLastNumbers();}
 
 
 
