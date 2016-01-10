@@ -66,7 +66,7 @@ public class LinkedListEx
 			return;
 		}
 
-		if (head.getName().equals(name)) 
+		if (head.getValue().equals(name))
 		{
 			head = head.getNextPatient();
 			head.setPrevPatient(null);
@@ -79,7 +79,7 @@ public class LinkedListEx
 
 			while (nextElement != null) 
 			{
-				if (nextElement.getName().equals(name)) 
+				if (nextElement.getValue().equals(name))
 				{
 					element.setNextPatient(nextElement.getNextPatient());
 					if (nextElement.getNextPatient() != null)
@@ -93,7 +93,7 @@ public class LinkedListEx
 				nextElement = nextElement.getNextPatient();
 			}
 		}
-		if (tail.getName().equals(name))
+		if (tail.getValue().equals(name))
 		{
 			tail = tail.getPrevPatient();
 		}

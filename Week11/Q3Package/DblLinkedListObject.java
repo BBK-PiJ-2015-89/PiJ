@@ -1,30 +1,26 @@
 package Week11.Q3Package;
 
-public class DblLinkedListObject
+public class DblLinkedListObject<T>
 {
-	private String name;
-	private int age; 
-	private String illness;
+	private T value;
 	private DblLinkedListObject nextPatient;
 	private DblLinkedListObject prevPatient;
 
-	public DblLinkedListObject(String name, int age, String illness)
+	public DblLinkedListObject(T value)
 	{
-		this.name = name;
-		this.age = age;
-		this.illness = illness;
+		this.value = value;
 		this.nextPatient = null;
 		this.prevPatient = null;
 	}	
 
 	public void print()
 	{
-		System.out.println(this.name + ", " + this.age + ", " + this.illness);
+		System.out.println(this.value);
 	}
 
-	public String getName() 
+	public T getValue()
 	{
-		return this.name;
+		return this.value;
 	}
 
 	public DblLinkedListObject getNextPatient()
