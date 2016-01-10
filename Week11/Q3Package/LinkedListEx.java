@@ -1,13 +1,13 @@
 package Week11.Q3Package;
 
 
-public class LinkedListEx
+public class LinkedListEx<T>
 {
 
 	private String name;
-	private DblLinkedListObject head;
+	private DblLinkedListObject<T> head;
 	private int count;
-	private DblLinkedListObject tail;
+	private DblLinkedListObject<T> tail;
 
 	public LinkedListEx(String name)
 	{
@@ -19,7 +19,7 @@ public class LinkedListEx
 
 	public void printPatients() 
 	{
-		DblLinkedListObject element = head;
+		DblLinkedListObject<T> element = head;
 		System.out.println("Patients of " + this.name);
 		System.out.println("Patients in order: ");
 		while (element != null) 
@@ -38,7 +38,7 @@ public class LinkedListEx
 		}
 	}
 
-	public void addPatient(DblLinkedListObject dblLinkedListObject)
+	public void addPatient(DblLinkedListObject<T> dblLinkedListObject)
 	{
 		if (head == null) 
 		{
@@ -47,7 +47,7 @@ public class LinkedListEx
 		} 
 		else 
 		{
-			DblLinkedListObject element = head;
+			DblLinkedListObject<T> element = head;
 
 			while (element.getNextPatient() != null) 
 			{
@@ -74,8 +74,8 @@ public class LinkedListEx
 		} 
 		else 
 		{
-			DblLinkedListObject element = head;
-			DblLinkedListObject nextElement = element.getNextPatient();
+			DblLinkedListObject<T> element = head;
+			DblLinkedListObject<T> nextElement = element.getNextPatient();
 
 			while (nextElement != null) 
 			{

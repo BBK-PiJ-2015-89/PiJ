@@ -3,8 +3,8 @@ package Week11.Q3Package;
 public class DblLinkedListObject<T>
 {
 	private T value;
-	private DblLinkedListObject nextPatient;
-	private DblLinkedListObject prevPatient;
+	private DblLinkedListObject<T> nextPatient;
+	private DblLinkedListObject<T> prevPatient;
 
 	public DblLinkedListObject(T value)
 	{
