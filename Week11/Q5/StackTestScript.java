@@ -10,7 +10,7 @@ public class StackTestScript {
 
         stc.launch1();
         stc.launch2();
-        stc.launch3();
+        /*stc.launch3();*/
     }
 
     private void launch1() {
@@ -26,12 +26,12 @@ public class StackTestScript {
 
     }
 
-    private void launch3() {
+    /*private void launch3() {
         Stack<String> stc3 = new Stack<String>();
         stc3.push("Graeme");
 
         //will not compile as not compatible with extends Number.
-    }
+    }*/
 
 
 }

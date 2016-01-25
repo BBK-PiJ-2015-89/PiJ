@@ -10,4 +10,12 @@ public interface User {
     String getName();
 
     int getID();
+
+    void setID(int ID);
+
+    /*Returns ID when library user added*/
+    int register(Library library);
+
+    /*Returns library name when called*/
+    Library getLibrary();
 }
