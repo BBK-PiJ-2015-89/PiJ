@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week15/CodeFlow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week15/ProgrammeRead10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week15/ProgrammeRead10.java" afterPath="$PROJECT_DIR$/Week15/ProgrammeRead10.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiJ.iws" />
@@ -57,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/Week15/ProgrammeRead10.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.78028744">
-              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -711,7 +709,7 @@
       <workItem from="1452454282185" duration="3237000" />
       <workItem from="1453140936744" duration="9819000" />
       <workItem from="1453745182308" duration="8799000" />
-      <workItem from="1454351573265" duration="3325000" />
+      <workItem from="1454351573265" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="updating for intellji">
       <created>1452293117231</created>
@@ -803,11 +801,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453756018698</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Day tasks updated.">
+      <created>1454358376348</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1454358376348</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40387000" />
+    <option name="totallyTimeSpent" value="40918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -888,7 +892,8 @@
     <MESSAGE value="removing excess bracket." />
     <MESSAGE value="question 5 done." />
     <MESSAGE value="tests updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests updated" />
+    <MESSAGE value="Day tasks updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day tasks updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1284,7 +1289,7 @@
     <entry file="file://$PROJECT_DIR$/Week15/ProgrammeRead10.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78028744">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
