@@ -32,6 +32,7 @@ package Week16;
                 if (reader != null) {
                     reader.close();
                 }
+
             } catch (IOException ex) {
                 ex.printStackTrace();
             }

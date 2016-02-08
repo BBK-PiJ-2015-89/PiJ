@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week16/Cat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week16/Ls.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week16/MakeDir.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week16/Cp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week16/Cat.java" afterPath="$PROJECT_DIR$/Week16/Cat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiJ.iws" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Ls.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ls.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week16/Ls.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5320946">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,8 +53,20 @@
         <entry file="file://$PROJECT_DIR$/Week16/Cat.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Week16/Cp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8445946">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Week7/HospitalExample.java" />
         <option value="$PROJECT_DIR$/Week7/HospitalExampleC.java" />
         <option value="$PROJECT_DIR$/Week7/HospitalExampleDBL.java" />
         <option value="$PROJECT_DIR$/Week7/IntList.java" />
@@ -130,8 +140,9 @@
         <option value="$PROJECT_DIR$/Week15/CodeFlow.java" />
         <option value="$PROJECT_DIR$/Week15/ProgrammeRead10.java" />
         <option value="$PROJECT_DIR$/Week16/MakeDir.java" />
-        <option value="$PROJECT_DIR$/Week16/Cat.java" />
         <option value="$PROJECT_DIR$/Week16/Ls.java" />
+        <option value="$PROJECT_DIR$/Week16/Cat.java" />
+        <option value="$PROJECT_DIR$/Week16/Cp.java" />
       </list>
     </option>
   </component>
@@ -640,7 +651,7 @@
       <workItem from="1453140936744" duration="9819000" />
       <workItem from="1453745182308" duration="8799000" />
       <workItem from="1454351573265" duration="4367000" />
-      <workItem from="1454955454376" duration="3652000" />
+      <workItem from="1454955454376" duration="5966000" />
     </task>
     <task id="LOCAL-00001" summary="updating for intellji">
       <created>1452293117231</created>
@@ -744,11 +755,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454358892817</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="week16initialcommit&#10;">
+      <created>1454959300880</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1454959300880</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45081000" />
+    <option name="totallyTimeSpent" value="47395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="0" />
@@ -831,7 +848,8 @@
     <MESSAGE value="tests updated" />
     <MESSAGE value="Day tasks updated." />
     <MESSAGE value="Extra vesion with manual set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extra vesion with manual set up" />
+    <MESSAGE value="week16initialcommit&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="week16initialcommit&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -844,13 +862,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Week7/Spy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5863192">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week7/PatientDBL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1189,6 +1200,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Week16/Ls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Week16/MakeDir.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1200,15 +1221,15 @@
     <entry file="file://$PROJECT_DIR$/Week16/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week16/Ls.java">
+    <entry file="file://$PROJECT_DIR$/Week16/Cp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5320946">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.8445946">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
