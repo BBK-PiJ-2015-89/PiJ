@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week17/Increaser.java" afterPath="$PROJECT_DIR$/Week17/Increaser.java" />
+    <list default="true" id="710c0dbb-2b55-4f04-a2d4-d558d83e162c" name="Default" comment="adding Synchronised because N++ not atomic and shared resources.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PiJ.iml" afterPath="$PROJECT_DIR$/PiJ.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PiJ.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="Increaser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week17/Increaser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70858896">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.77607363">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#206#207#0" expanded="true" />
@@ -642,7 +642,7 @@
       <workItem from="1453745182308" duration="8799000" />
       <workItem from="1454351573265" duration="4367000" />
       <workItem from="1454955454376" duration="8944000" />
-      <workItem from="1455561567413" duration="4605000" />
+      <workItem from="1455561567413" duration="4792000" />
     </task>
     <task id="LOCAL-00001" summary="updating for intellji">
       <created>1452293117231</created>
@@ -770,15 +770,21 @@
       <option name="project" value="LOCAL" />
       <updated>1455565189856</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="adding Synchronised because N++ not atomic and shared resources.">
+      <created>1455566394442</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1455566394442</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54978000" />
+    <option name="totallyTimeSpent" value="55165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -861,7 +867,8 @@
     <MESSAGE value="cp first time go" />
     <MESSAGE value="Week 17 inital commit&#10;" />
     <MESSAGE value="original code" />
-    <option name="LAST_COMMIT_MESSAGE" value="original code" />
+    <MESSAGE value="adding Synchronised because N++ not atomic and shared resources." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Synchronised because N++ not atomic and shared resources." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1238,8 +1245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week17/Increaser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70858896">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.77607363">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
