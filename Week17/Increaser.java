@@ -19,18 +19,17 @@ public class Increaser implements Runnable {
     }
 
     public void run(){
-        System.out.println("Starting at " + c.getCount());
-        for (int i = 0; i <1000 ; i++) {
-            c.increase();
+                System.out.println("Starting at " + c.getCount());
+            for (int i = 0; i < 1000; i++) {
+                c.increase();
+            }
+            System.out.println("Stopping at " + c.getCount());
         }
-        System.out.println("Stopping at " + c.getCount());
     }
 
-
-}
 class Counter{
     private int n = 0;
-    public void increase(){
+    public synchronized void increase(){
         n++;
     }
     public int getCount(){
