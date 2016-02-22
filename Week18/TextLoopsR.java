@@ -1,5 +1,8 @@
 package Week18;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * Created by graemewilkinson on 22/02/16.
  */
@@ -29,11 +32,12 @@ package Week18;
                     r.run();
                 }
             } else {
+                ExecutorService e = Executors.newFixedThreadPool(5);
                 for (int i = 0; i < 10; i++) {
                     Runnable r = new TextLoopsR("Thread " + i);
-                    Thread t = new Thread(r);
-                    t.start();
+                    e.execute(r);
                 }
+                e.shutdown();
             }
         }
     }
