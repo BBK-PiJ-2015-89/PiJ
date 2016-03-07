@@ -7,7 +7,7 @@ import java.util.concurrent.Executor;
 /**
  * Created by graemewilkinson on 22/02/16.
  */
-public class ExecutorImpl {
+public class ExecutorImpl implements Executor{
     final Queue<Runnable> tasks = new ArrayDeque<Runnable>();
     final Executor executor;
     Runnable active;
