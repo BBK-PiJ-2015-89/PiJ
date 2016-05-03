@@ -16,5 +16,6 @@ public class StringSorter {
         String[] initialArray = {"a", "test", "b", "c", "d"};
         Arrays.sort(initialArray, StringMethods::compare);
         System.out.println(Arrays.asList(initialArray));
+
     }
 }

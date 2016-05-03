@@ -1,0 +1,3 @@
+grant codeBase "file:///Users/graemewilkinson/Google\ Drive/ProgrammingInJava/PiJ/out/production/PiJ/Week21" {
+	permission java.security.AllPermission;
+};
